@@ -1,0 +1,207 @@
+/* universal selector */
+*
+{
+    margin:0;
+    padding:0;
+}
+/* body tag will come here */
+body
+{
+  background-image: url("main-image.jpg");
+}
+img 
+{
+    height: 60px;
+    width: 70px;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+/* for navbar */
+.navbar ul 
+{
+    margin-left: 150px;
+}
+.navbar
+{
+    margin-top: 10px;
+    height: 80px;
+    background-image: url("navbar-image.png");
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Zen Antique', serif;
+}
+.navbar li 
+{
+    display: inline-block;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+.navbar li a
+{
+    text-decoration: none;
+    font-size: 30px; 
+    color: #dcdae0;
+}
+.navbar  input 
+{
+    position: relative;
+    left: 150px;
+    height: 30px;
+    width: 250px;
+    border-radius: 50px;
+    text-align: center;
+}
+.navbar button
+{
+    position: relative;
+    left: 150px;
+    border-radius: 50px;
+    width: 70px;
+    cursor: pointer;
+}
+.navbar li a:hover 
+{
+    color: rgb(151, 189, 226);
+}
+.navbar button:hover 
+{
+    background-color: rgb(151, 189, 226);
+}
+/* section will come here */
+.section
+{
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.section img 
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 700px;
+    width: 1000px;
+}
+/* login will come here */
+.login
+{
+    height: 350px;
+    width: 1000px;
+    font-size: 40px;
+    position: relative;
+    top: 40px;
+    text-align: center;
+    color: #000D6B;
+}
+.login input 
+{
+    height: 40px;
+    width: 300px;
+}
+#comment 
+{
+    margin-top: 20px;
+    height: 90px;
+}
+.login button 
+{
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.login hr
+{
+    width: 250px;
+    margin-left: 380px;
+}
+.login button:hover
+{
+    background-color:rgb(151, 189, 226);;
+}
+/* footer will come here */
+.footer 
+{
+    position: relative;
+    top: 20%;
+    left: -26%;
+    height: 250px;
+    width: 1520px;
+    background-image: url("navbar-image.png");
+    color: #dcdae0;
+}
+/* media queries */
+@media (min-width:340px) and (max-width:640px)
+{
+   .conatiner 
+   {
+       position: relative;
+       top: -62px;
+   }
+    img 
+    {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        left: 0px;
+        top: 75px;
+    } 
+    .navbar 
+    {
+        display: flex;
+        flex-direction: row;
+        width:635px;
+    }
+    .navbar li 
+    {
+        display: inline-block;
+        text-align: center;
+        padding-left: 0px;
+        position: relative;
+        top: 11px;
+        left: -35px;
+    }
+    .navbar ul li a
+    {
+        font-size: 10px;
+        text-align: center;
+    }
+    .navbar input 
+    {
+        position: relative;
+        top: 5px;
+        left: 10px;
+        width: 100px;
+        height: 20px;
+        border-radius: 20px;
+    }
+    .navbar button 
+    {
+        position: relative;
+        top: 5px;
+        height: 20px;
+        width: 50px;
+        left: 10px;
+        border-radius: 20px;
+    }
+    .section img 
+    {
+        position: relative;
+        top:-20px;
+        left: -82px;
+        height: 680px;
+        width: 720px;
+    }
+    .login
+    {
+        font-size: 15px;
+        position: relative;
+        left: -240px;
+    }
+    .login input 
+    {
+        width: 220px;
+    }
+}
